@@ -1,9 +1,9 @@
 {
-  "name": "Extended Pulse Measurements",
+  "name": "An Extended Pulse Measurements Plugin",
   "apiVersion": "1.0.0",
   "author": "Mark Omo",
-  "version": "1.0.0",
-  "description": "Measures various pulse widths, duty cycles, and frequency stats.",
+  "version": "1.0.1",
+  "description": "Measures positive and negative pulse widths, duty cycle, and frequency (mean, min, max).",
   "extensions": {
     "ExtendedDigital": {
       "type": "DigitalMeasurement",
@@ -33,7 +33,6 @@
           "name": "Negative Pulse Width Max",
           "notation": "T<sub>negMax</sub>"
         },
-
         "dutyMean": {
           "name": "Duty Cycle Mean",
           "notation": "Duty<sub>mean</sub>"
@@ -46,7 +45,6 @@
           "name": "Duty Cycle Max",
           "notation": "Duty<sub>max</sub>"
         },
-
         "freqMean": {
           "name": "Frequency Mean",
           "notation": "f<sub>mean</sub>"
