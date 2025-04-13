@@ -1,0 +1,65 @@
+{
+  "name": "Extended Pulse Measurements",
+  "apiVersion": "1.0.0",
+  "author": "Mark Omo",
+  "version": "1.0.0",
+  "description": "Measures various pulse widths, duty cycles, and frequency stats.",
+  "extensions": {
+    "ExtendedDigital": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "DigitalMeasurement.ExtendedDigitalMeasurer",
+      "metrics": {
+        "posPulseWidthMean": {
+          "name": "Positive Pulse Width Mean",
+          "notation": "T<sub>posMean</sub>"
+        },
+        "posPulseWidthMin": {
+          "name": "Positive Pulse Width Min",
+          "notation": "T<sub>posMin</sub>"
+        },
+        "posPulseWidthMax": {
+          "name": "Positive Pulse Width Max",
+          "notation": "T<sub>posMax</sub>"
+        },
+        "negPulseWidthMean": {
+          "name": "Negative Pulse Width Mean",
+          "notation": "T<sub>negMean</sub>"
+        },
+        "negPulseWidthMin": {
+          "name": "Negative Pulse Width Min",
+          "notation": "T<sub>negMin</sub>"
+        },
+        "negPulseWidthMax": {
+          "name": "Negative Pulse Width Max",
+          "notation": "T<sub>negMax</sub>"
+        },
+
+        "dutyMean": {
+          "name": "Duty Cycle Mean",
+          "notation": "Duty<sub>mean</sub>"
+        },
+        "dutyMin": {
+          "name": "Duty Cycle Min",
+          "notation": "Duty<sub>min</sub>"
+        },
+        "dutyMax": {
+          "name": "Duty Cycle Max",
+          "notation": "Duty<sub>max</sub>"
+        },
+
+        "freqMean": {
+          "name": "Frequency Mean",
+          "notation": "f<sub>mean</sub>"
+        },
+        "freqMin": {
+          "name": "Frequency Min",
+          "notation": "f<sub>min</sub>"
+        },
+        "freqMax": {
+          "name": "Frequency Max",
+          "notation": "f<sub>max</sub>"
+        }
+      }
+    }
+  }
+}
